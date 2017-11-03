@@ -3,7 +3,7 @@ extern _printf
 default rel
 global _main
 
-section .data
+section .rodata
     fmt db "a = %d, fmt = %s, len = %d, f = %f", 0x0A, 0
     len equ $-fmt
     a dd 5

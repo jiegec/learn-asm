@@ -2,7 +2,7 @@ bits 64
 extern _printf
 default rel
 
-section .data
+section .rodata
     fmt db "a = %ld, fmt = %s, len = %d, f = %f", 0x0A, 0
     len equ $-fmt
     a dq 5
