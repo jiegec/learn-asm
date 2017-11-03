@@ -1,18 +1,18 @@
-    bits 64
-    extern _printf
-    default rel
+bits 64
+extern _printf
+default rel
 
-    section .data
-fmt: db "a = %ld, fmt = %s, len = %d, f = %f", 0x0A, 0
-len: equ $-fmt
-a: dq 5
-f: dd 3.1415926
+section .data
+    fmt db "a = %ld, fmt = %s, len = %d, f = %f", 0x0A, 0
+    len equ $-fmt
+    a dq 5
+    f dd 3.1415926
 
-    section .bss
-flttmp: resq 1
+section .bss
+    flttmp resq 1
 
-    section .text
-    global _main
+section .text
+global _main
 _main:
     push rbp
 
