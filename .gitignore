@@ -1,4 +1,7 @@
 .idea/
+*.bin
+booktool/
+booktool.zip
 
 ## HubIgnore Begin: Global/macOS, C++, Global/JetBrains
 ## Global/macOS Begins:
