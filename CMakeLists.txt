@@ -7,3 +7,5 @@ set(CAN_USE_ASSEMBLER TRUE)
 add_subdirectory(32bit)
 add_subdirectory(64bit)
 
+set(CMAKE_CXX_STANDARD 17)
+add_executable(jit jit.cpp)
